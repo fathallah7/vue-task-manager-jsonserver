@@ -4,11 +4,11 @@ A simple and modern task management app built using **Vue 3**, **Vite**, and **J
 
 ## 🔧 Tech Stack
 
-- [Vue 3](https://vuejs.org/) (Composition API)
-- [Vite](https://vitejs.dev/) – blazing fast dev server
+- [Vue 3](https://vuejs.org/) 
+- [Vite](https://vitejs.dev/)
 - [JSON Server](https://github.com/typicode/json-server) 
 - [Vue Router](https://router.vuejs.org/)
-- [Vue Toastification](https://vue-toastification.maronato.dev/) – for success/error messages
+- [Vue Toastification](https://vue-toastification.maronato.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ## 🛠️ Setup Instructions
