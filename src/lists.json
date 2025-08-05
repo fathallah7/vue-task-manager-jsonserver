@@ -1,0 +1,38 @@
+{
+  "lists": [
+    {
+      "id": "2",
+      "title": "Review JavaScript",
+      "type": "Study",
+      "description": "Go over JavaScript functions, scope, and ES6 syntax."
+    },
+    {
+      "id": "3",
+      "title": "Finish Vue Tutorial",
+      "type": "Development",
+      "description": "Complete the official Vue.js documentation tutorial."
+    },
+    {
+      "id": "4",
+      "title": "Read Algorithms Book",
+      "type": "Reading",
+      "description": "Read chapter 3 and 4 from 'Grokking Algorithms'."
+    },
+    {
+      "id": "5",
+      "title": "Practice LeetCode",
+      "type": "Practice",
+      "description": "Solve 3 easy problems and 2 medium ones on arrays and strings."
+    },
+    {
+      "id": "6",
+      "title": "Write Notes",
+      "type": "Revision",
+      "description": "Summarize key points from the last 3 lessons in Python."
+    },
+    {
+      "id": "cf36",
+      "title": "rrr"
+    }
+  ]
+}
