@@ -1,10 +1,10 @@
     <script setup>
     import axios from 'axios';
     import { ref } from 'vue';
-    import { useToast } from 'vue-toastification';
 
-    
-    const toast = useToast();
+    import { useRouter } from 'vue-router';
+    const router = useRouter();
+
 
     const form = ref({
         title: '',
@@ -22,12 +22,12 @@
 
         try {
             await axios.post('/api/lists', newTask);
-            toast.success("Task created successfully!");
+            router.push({ name: 'allTasks', query: { created: 'true' } });
         } catch (error) {
             console.error("EE", error)
             toast.error("Failed to create task. Please try again.");
-
         }
+
     };
 
 </script>
@@ -44,8 +44,7 @@
 
                         <div class="mb-4">
                             <label for="type" class="block text-gray-700 font-bold mb-2">Type</label>
-                            <select v-model="form.type" id="type" name="type" class="border rounded w-full py-2 px-3"
-                                >
+                            <select v-model="form.type" id="type" name="type" class="border rounded w-full py-2 px-3">
                                 <option value="Study">Study</option>
                                 <option value="Reading">Reading</option>
                                 <option value="Life">Life</option>
@@ -57,7 +56,7 @@
                         <div class="mb-4">
                             <label class="block text-gray-700 font-bold mb-2">Title</label>
                             <input v-model="form.title" type="text" id="name" name="name"
-                                class="border rounded w-full py-2 px-3 mb-2" placeholder="eg. Finish H.W"  />
+                                class="border rounded w-full py-2 px-3 mb-2" placeholder="eg. Finish H.W" />
                         </div>
                         <div class="mb-4">
                             <label for="description" class="block text-gray-700 font-bold mb-2">Description</label>

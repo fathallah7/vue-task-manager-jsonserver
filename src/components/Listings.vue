@@ -3,12 +3,30 @@
 import axios from 'axios';
 import { ref, onMounted } from 'vue';
 
+import { useRouter, useRoute } from 'vue-router';
+import { useToast } from 'vue-toastification';
 
-const deleteTask  = async (id) => {
+const router = useRouter();
+const route = useRoute();
+const toast = useToast();
+
+
+
+onMounted(() => {
+    if (route.query.created === 'true') {
+        toast.success("Task created successfully!");
+    } else if (route.query.deleted === 'true') {
+        toast.success("Task deleted successfully!");
+    }
+});
+
+
+const deleteTask = async (id) => {
     try {
         const confirm = window.confirm('Are you sure you want to delete this Task?');
         if (confirm) {
             await axios.delete(`/api/lists/${id}`);
+            router.push({ name: 'allTasks', query: { deleted: 'true' } });
         }
     } catch (error) {
         console.error('Error deleting job', error);
