@@ -2,6 +2,7 @@ import { createRouter , createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import TasksView from "../views/TasksView.vue";
 import AddTasks from "../views/AddTasks.vue";
+import EditTask from "../views/EditTask.vue";
 
 
 const router = createRouter ({
@@ -21,6 +22,11 @@ const router = createRouter ({
             path: '/add-tasks' ,
             name: 'addTasks' ,
             component: AddTasks
+        },
+        {
+            path: '/edit/:id' ,
+            name: 'editTask' ,
+            component: EditTask
         }
     ]
 });

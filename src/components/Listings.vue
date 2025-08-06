@@ -18,6 +18,9 @@ onMounted(() => {
     } else if (route.query.deleted === 'true') {
         toast.success("Task deleted successfully!");
     }
+    else if (route.query.updated === 'true') {
+        toast.success("Task updated successfully!");
+    }
 });
 
 
@@ -80,10 +83,11 @@ onMounted(async () => {
                                 Delete
                             </button>
 
-                            <button type="submit"
+                            <RouterLink :to="{ name: 'editTask', params: { id: list.id } }"
                                 class="px-3 py-1 border border-green-600 text-green-600 rounded hover:bg-green-100 transition text-xs">
                                 Update
-                            </button>
+                            </RouterLink>
+
 
                         </div>
                     </td>
