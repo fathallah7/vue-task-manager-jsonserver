@@ -30,6 +30,6 @@ npm install
 # 3. Run the Json Server
 npm run server
 
-# 3. Run the app
+# 4. Run the app
 npm run dev
 ````
