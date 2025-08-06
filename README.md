@@ -12,7 +12,9 @@ A simple and modern task management app built using **Vue 3**, **Vite**, and **J
 - [Tailwind CSS](https://tailwindcss.com/)
 
 <!-- ![My Image](/src/assets/demo.jpg) -->
-<img src="/src/assets/demo.jpg" alt="App Screenshot" width="600" />
+<p align="center">
+<img src="/src/assets/demo.jpg" alt="App Screenshot" width="500" />
+</p>
 
 
 ## 🛠️ Setup Instructions
