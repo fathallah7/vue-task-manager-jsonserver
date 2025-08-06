@@ -11,6 +11,9 @@ A simple and modern task management app built using **Vue 3**, **Vite**, and **J
 - [Vue Toastification](https://vue-toastification.maronato.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
+![My Image](/src/assets/demo.jpg)
+
+
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the repo
