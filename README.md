@@ -11,7 +11,7 @@ A simple and modern task management app built using **Vue 3**, **Vite**, and **J
 - [Vue Toastification](https://vue-toastification.maronato.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
-## 📸 Screen Shot
+## 🔧 Screen Shot
 
 <p align="center">
 <img src="/src/assets/demo.jpg" alt="App Screenshot" width="500" />
@@ -19,33 +19,17 @@ A simple and modern task management app built using **Vue 3**, **Vite**, and **J
 
 ## 🛠️ Setup Instructions
 
-<!-- ### 1. Clone the repo
-
 ```bash
-git clone https://github.com/fathallah7/vue-task-manager-jsonserver.git
-cd vue-task-manager-jsonserver -->
-
-1. Clone the Repo
-bash
-Copy
-Edit
+# 1. Clone the repo
 git clone https://github.com/fathallah7/vue-task-manager-jsonserver.git
 cd vue-task-manager-jsonserver
-2. Install Dependencies
-bash
-Copy
-Edit
-npm install
-3. Start JSON Server
-bash
-Copy
-Edit
-npm run server
-This will run json-server on http://localhost:3000
 
-4. Start the Vue App
-bash
-Copy
-Edit
+# 2. Install dependencies
+npm install
+
+# 3. Run the Json Server
+npm run server
+
+# 3. Run the app
 npm run dev
-```
+````
